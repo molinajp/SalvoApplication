@@ -68,7 +68,7 @@ public class RepoServiceImpl implements RepoService {
     }
 
     public Game getGame(Long gameId){
-        return gameRepository.getById(gameId);
+        return gameRepository.getOne(gameId);
     }
 
     public void saveGame(Game game){
